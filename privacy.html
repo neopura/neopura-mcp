@@ -18,9 +18,13 @@ uploads.</p>
 <p>Only to let the owner's own AI assistants read and act on the owner's data when he asks
 them to.</p>
 <h2>How it is stored</h2>
-<p>The Google authorization is kept encrypted on a server the owner runs. The server keeps a
-journal of the requests it made and their outcome, with secrets removed. It does not keep a
-copy of the mailbox, files or other account content.</p>
+<p>The Google authorization is kept encrypted on a server the owner runs. The server does not
+build a copy of the mailbox, the Drive or the rest of the account.</p>
+<p>It keeps a journal of every request it makes: the parameters, with secrets removed and long
+content cut short, and the outcome. The journal can therefore contain short pieces of content,
+such as the text of a message the owner asked to send.</p>
+<p>Files the owner asks it to download are written to a transfer folder on the same server and
+stay there until the owner deletes them.</p>
 <h2>Sharing</h2>
 <p>No data is sold or shared with anyone. Content that the owner's AI assistants read is
 processed by the AI model provider the owner uses, under the owner's own account.</p>
